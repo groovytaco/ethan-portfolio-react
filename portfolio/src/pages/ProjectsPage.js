@@ -1,7 +1,7 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import Navigation from '../components/Navigation';
-import { projectsData } from '../data/projects';
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import Navigation from "../components/Navigation";
+import { projectsData } from "../data/projects";
 
 function ProjectsPage() {
   const navigate = useNavigate();
@@ -9,11 +9,13 @@ function ProjectsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-zinc-950 via-stone-500 to-zinc-900 text-white">
       <Navigation />
-      
+
       <div className="pt-24 pb-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">Featured Projects</h1>
-          
+          <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+            Featured Projects
+          </h1>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projectsData.map((project) => (
               <div
@@ -31,13 +33,15 @@ function ProjectsPage() {
                     {project.category}
                   </div>
                 </div>
-                
+
                 <div className="p-8">
                   <h3 className="text-2xl font-bold mb-3 group-hover:text-cyan-400 transition-colors">
                     {project.title}
                   </h3>
-                  <p className="text-gray-400 text-base mb-5">{project.description}</p>
-                  
+                  <p className="text-gray-400 text-base mb-5">
+                    {project.description}
+                  </p>
+
                   <div className="flex flex-wrap gap-2">
                     {project.tech.slice(0, 3).map((tech) => (
                       <span
