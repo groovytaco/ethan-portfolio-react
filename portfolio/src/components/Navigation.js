@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Navigation() {
   const [activeSection, setActiveSection] = useState("home");
@@ -51,7 +51,7 @@ function Navigation() {
             >
               Contact
             </a> */}
-            {["Profile", "About", "Resume", "Contact"].map((item) => (
+            {["Profile", "About", "Resume", "Projects", "Contact"].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}

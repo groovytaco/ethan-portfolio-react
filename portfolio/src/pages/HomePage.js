@@ -1,24 +1,21 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-
 import {
   Navigation,
   Profile,
   About,
-  Projects,
-  Contact,
+  ProjectsPreview,
   Resume,
+  Contact
 } from "../components";
 
 function HomePage() {
-  const navigate = useNavigate();
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-zinc-950 via-stone-500 to-zinc-900 text-white">
       <Navigation />
       <Profile />
       <About />
       <Resume />
+      <ProjectsPreview />
       <Contact />
     </div>
   );
