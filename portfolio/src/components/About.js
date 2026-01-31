@@ -8,12 +8,10 @@ function About() {
           About Me
         </h2>
         <p className="text-gray-300 text-lg leading-relaxed text-center max-w-4xl mx-auto">
-          I'm Ethan Sanchez, a robotics engineer and software developer
-          currently pursuing a Master's in Robotics at the University of
-          Pennsylvania. With a background in Mechanical Engineering and Computer
-          Science from the University of Colorado Boulder, I specialize in
-          autonomous systems, computer vision, and intelligent control
-          algorithms.
+        I’m a robotics engineer working at the intersection of electromechanical design, embedded systems, and autonomy. 
+        I’ve built and integrated robotic platforms involving custom mechanisms, sensors, microcontrollers, and control 
+        software, with experience taking systems from prototype to field-ready. My interests include aerial robotics, 
+        intelligent control, and designing systems that perform reliably outside the lab.
         </p>
       </div>
     </div>
