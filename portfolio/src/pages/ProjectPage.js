@@ -13,6 +13,13 @@ function ProjectPage() {
     window.scrollTo(0, 0);
   }, [id]);
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   if (!project) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-zinc-950 via-stone-500 to-zinc-900 text-white flex items-center justify-center">
@@ -36,7 +43,10 @@ function ProjectPage() {
       <div className="pt-24 pb-16 px-4">
         <div className="max-w-6xl mx-auto">
           <button
-            onClick={() => navigate('/projects')}
+            onClick={() => {
+              navigate('/');
+              scrollToSection("Projects");
+            }}
             className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 mb-8 transition-colors"
           >
             <ArrowLeft size={20} />
@@ -97,7 +107,7 @@ function ProjectPage() {
                   <div key={index} className="rounded-lg overflow-hidden border border-blue-900/30 hover:border-cyan-500/50 transition-all">
                     <img
                       src={image}
-                      alt={`${project.title} - Image ${index + 1}`}
+                      alt={`${project.title} ${index + 1}`}
                       className="w-full h-64 object-cover"
                     />
                   </div>
