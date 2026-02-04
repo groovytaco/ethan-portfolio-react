@@ -3,7 +3,7 @@ export const projectsData = [
     id: 1,
     title: "Adaptive Fishing Robot",
     category: "Robotics",
-    image: "/images/fishing/adaptive-fishing.png",
+    image: "/images/fishing/expo.png",
     description:
       "Robotic system designed to assist individuals with spinal cord injuries in fishing activities.",
     tech: ["Electrical Design", "Kinematics", "Assistive Technology", "Prototyping"],
@@ -15,28 +15,55 @@ export const projectsData = [
       "Safety stop systems",
     ],
     detailedDescription: [
-      "Developed an assistive robotic system that enables individuals with limited mobility to enjoy fishing independently.",
-      "The robot features automated casting, retrieval mechanisms, and an intuitive control interface designed specifically for users with spinal cord injuries.",
-      "This project combines mechanical engineering, robotics, and human-centered design to create a meaningful assistive technology solution.",
+      "My senior design team was commissioned by Quality of Life Plus and the River Deep Foundation to develop an adaptive fishing \
+       device for individuals with limited upper arm mobility or severe spinal cord injuries. The goal was to enable people with \
+       disabilities to enjoy the therapeutic benefits of fishing and reclaim a sense of independence. The robot features automated \
+       casting and reeling mechanisms as well as an intuitive control interface designed specifically for users with spinal cord injuries.\
+       This project combines mechanical engineering, robotics, and human-centered design to create a meaningful assistive technology solution."
+    ],
+    contributions: [
+      "test 1",
+      "test 2",
     ],
     challenges: [
       {
         challenge: "User Interface Design",
         solution:
-          "Conducted extensive user testing with individuals with spinal cord injuries to develop an accessible and intuitive control system.",
+          "talking with end users/assistants, sip n puff tubes, client wanted full control",
       },
       {
-        challenge: "Environmental Adaptability",
+        challenge: "Casting Mechanism Design",
         solution:
-          "Implemented robust control algorithms that adapt to different fishing conditions and environments.",
+          "torsional springs, stepper motor with right specs",
       },
+      {
+        challenge: "Handling Generated Current",
+        solution:
+          "relays and diodes",
+      },
+      {
+        challenge: "Line Release Timing",
+        solution:
+          "fast solenoid/testing release timing",
+      },
+      {
+        challenge: "Reeling speeds",
+        solution:
+          "feedback loop but maybe remove this challenge",
+      }
     ],
     gallery: [
-      "/images/fishing/AFD_ExpoPoster.jpg",
-      "/images/fishing/Capture_edited.jpg",
-      "/images/fishing/Capture.JPG",
+      "/images/fishing/expo.png",
+      "/images/fishing/expoPoster.jpg",
+      "/images/fishing/UI.png",
+      "/images/fishing/subassemblies.png",
+      "/images/fishing/casting.png",
+      "/images/fishing/reeling.png",
+      "/images/fishing/deviceByLake.png",
+      "/images/fishing/electricalDiagram.png",
+      "/images/fishing/pcb.png",
     ],
-    link: "https://github.com/yourusername/adaptive-fishing",
+    link: "https://github.com/etsa2103/Assisted-Fishing-Device",
   },
   // ================================================================
   // ================================================================
@@ -79,7 +106,7 @@ export const projectsData = [
     category: "Robotics",
     image: "/images/RoboRacer/RoboRacerCar.png",
     description:
-      "Robotic system designed to assist individuals with spinal cord injuries in fishing activities.",
+      "Fill in",
     tech: ["ROS2", "Computer Vision", "Autonomy", "Machine Learning"],
     features: [
       

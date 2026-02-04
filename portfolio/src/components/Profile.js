@@ -4,6 +4,13 @@ import { useNavigate } from "react-router-dom";
 
 function Profile() {
   const navigate = useNavigate();
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section
       id="Profile"
@@ -45,13 +52,13 @@ function Profile() {
 
         <div className="flex justify-center gap-4 mb-12">
           <button
-            onClick={() => navigate("/projects")}
+            onClick={() => scrollToSection("Projects")}
             className="bg-gradient-to-r from-blue-600 to-cyan-600 px-8 py-3 rounded-lg font-semibold hover:from-blue-700 hover:to-cyan-700 transition-all transform hover:scale-105 flex items-center gap-2"
           >
             View Projects <ChevronRight size={35} />
           </button>
           <button
-            onClick={() => navigate("/contact")}
+            onClick={() => scrollToSection("Contact")}
             className="border-2 border-cyan-500 px-8 py-3 rounded-lg font-semibold hover:bg-cyan-500/40 transition-all"
           >
             Get in Touch
