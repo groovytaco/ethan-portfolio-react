@@ -218,7 +218,7 @@ export const projectsData = [
       motion of the controller’s analog stick using a multi-stage gear system, allowing it to work seamlessly with games\
       that rely on traditional controller steering inputs. The gear mechanism and controller interface were housed inside\
       a custom-built wooden enclosure, combining functional durability with a clean, finished appearance.",
-      
+
       "A major focus of the project was achieving a street-racing aesthetic. The encloser was painted matte black, the wheel \
       eas wrapped in leather, and the whole thing was accented with a metallic center hub and purple LED underglow. The center\
       hub was machined from aluminum to provide strength and visual contrast, while the rest of the wheel was 3D printed."
@@ -262,24 +262,59 @@ export const projectsData = [
     category: "AI/ML",
     image: "/images/SceneGraph/sim.png",
     description:
-      "Created a machine learning pipeline to generate 3D semantic scene graphs from rgbD images.",
-    tech: ["Segmentation", "LLM", "Machine Learning", "Computer Vision"],
+      "Developed a pipeline for generating 3D semantic scene graphs from multi-view RGB-D images with support for natural language querying.",
+    tech: ["Computer Vision", "Machine Learning", "CLIP", "3D Reconstruction", "LLMs"],
     features: [
-      "Feature 1",
+      "Multi-view RGB-D 3D object reconstruction",
+      "Scene graph representation with object nodes and relationships",
+      "Open-vocabulary semantic representation using CLIP",
+      "Natural language querying of 3D scenes"
     ],
     detailedDescription: [
-      "First sentence.",
-      "Second sentence.",
+      "This project implements an end-to-end pipeline for 3D semantic scene understanding in simulated indoor environments. \
+      An agent collects RGB images, depth maps, and camera pose information from multiple viewpoints. Objects are segmented \
+      in each frame and projected into 3D space, where observations from different viewpoints are fused to form object-level \
+      point cloud representations.",
+      "The reconstructed objects are organized into a semantic scene graph, where nodes represent objects with geometric \
+      and semantic properties and edges represent spatial and semantic relationships. Semantic information is provided by \
+      CLIP embeddings, enabling open-vocabulary object understanding. Relationships between objects are inferred using a \
+      large language model, and the resulting scene graph supports natural language queries about object properties and \
+      spatial relationships within the scene."
+    ],
+    contributions: [
+      "Implemented multi-view 3D point cloud reconstruction by back-projecting segmented RGB-D data into world coordinates \
+      and fusing object observations across viewpoints",
+      "Integrated CLIP-based semantic embeddings to represent object-level semantics and enable similarity matching",
+      "Designed and implemented the scene graph generation process, including object nodes derived from fused 3D \
+      reconstructions",
+      "Contributed to overall system integration and evaluation within simulated indoor environments"
     ],
     challenges: [
       {
-        challenge: "Challenge 1",
+        challenge: "Extracting meaningful semantic embeddings from partial object views",
         solution:
-          "Solution 1",
+          "Objects were often observed only partially from individual viewpoints. I integrated CLIP embeddings at the \
+          object level to provide consistent semantic representations despite incomplete visual information."
       },
+      {
+        challenge: "Associating object observations across multiple viewpoints",
+        solution: "Geometric fusion criteria based on 3D centroids and spatial overlap were developed to merge observations \
+         into consistent object-level point cloud reconstructions."
+      },
+      {
+        challenge: "Representing complex 3D scenes in a compact structure",
+        solution: "Reconstructed objects were organized into a scene graph representation, enabling structured storage of \
+         geometric and semantic information while keeping the overall representation lightweight."
+      },
+      {
+        challenge: "Linking semantic information to 3D geometry",
+        solution:
+          "I developed a representation that attaches CLIP embeddings directly to reconstructed object point clouds, \
+          enabling semantic reasoning over 3D spatial data."
+      }
     ],
     gallery: [],
-    link: "https://github.com/yourusername/project-name",
+    link: "https://github.com/Meow404/e5460-project",
   },
   // ================================================================
   // ================================================================
