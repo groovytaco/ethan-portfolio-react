@@ -12,6 +12,4 @@ Fill out all content/ fill from PDF.
 
 add hobbies section back in
 
-add a my contributions section to projects
-
 <!-- Integrate all photos. -->

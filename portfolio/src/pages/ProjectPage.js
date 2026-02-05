@@ -126,7 +126,8 @@ function ProjectPage() {
               </div>
             </div>
           )}
-
+          
+          {project.contributions && (
           <div className="bg-slate-900/50 p-6 rounded-xl border border-blue-900/30 mb-8">
             <h3 className="text-2xl font-bold text-cyan-400 mb-4">My Contributions</h3>
             <ul className="space-y-2 text-gray-300">
@@ -138,6 +139,7 @@ function ProjectPage() {
               ))}
             </ul>
           </div>
+          )}
 
           {project.challenges && project.challenges.length > 0 && (
             <div className="bg-slate-900/50 p-8 rounded-xl border border-blue-900/30 mb-8">

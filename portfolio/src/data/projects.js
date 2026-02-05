@@ -15,41 +15,45 @@ export const projectsData = [
       "Safety stop systems",
     ],
     detailedDescription: [
-      "My senior design team was commissioned by Quality of Life Plus and the River Deep Foundation to develop an adaptive fishing \
-       device for individuals with limited upper arm mobility or severe spinal cord injuries. The goal was to enable people with \
-       disabilities to enjoy the therapeutic benefits of fishing and reclaim a sense of independence. The robot features automated \
-       casting and reeling mechanisms as well as an intuitive control interface designed specifically for users with spinal cord injuries.\
-       This project combines mechanical engineering, robotics, and human-centered design to create a meaningful assistive technology solution."
+      "My senior design team was commissioned by Quality of Life Plus and the River Deep Foundation to develop an adaptive \
+       fishing device for individuals with limited upper arm mobility or severe spinal cord injuries. The goal was to enable \
+       people with disabilities to enjoy the therapeutic benefits of fishing and reclaim a sense of independence. The robot \
+       features automated casting and reeling mechanisms as well as an intuitive control interface designed specifically for \
+       users with spinal cord injuries. This project combines mechanical engineering, robotics, and human-centered design to \
+       create a meaningful assistive technology solution."
     ],
     contributions: [
-      "test 1",
-      "test 2",
+      "Created simplified model of casting kinematics to calculate the neccesary spring constant our torsional springs would \
+       need to reach the max casting distance set by the client of 50ft",
+      "Sourced all electrical components including DC and stepper motors needed to meet performance requirments",
+      "Developed circuitry to control all electrical components and designed a custom PCB to make circuitry compact enough \
+       to fit into waterproof housings",
     ],
     challenges: [
       {
         challenge: "User Interface Design",
         solution:
-          "talking with end users/assistants, sip n puff tubes, client wanted full control",
-      },
-      {
-        challenge: "Casting Mechanism Design",
-        solution:
-          "torsional springs, stepper motor with right specs",
+          "The client needed a UI that was easy to use, offered full control over casting and reeling, and worked \
+           for users with limited upper arm mobility. I spoke with patients and caregivers during a River Deep fishing outing to \
+           understand their needs and what worked in other assistive devices. Using their feedback, I designed two controllers: \
+           one with a joystick and one with dual sip-and-puff tubes to control casting distance and reeling speed."       
       },
       {
         challenge: "Handling Generated Current",
-        solution:
-          "relays and diodes",
+        solution: "Our casting system uses a stepper motor to wind a torsional spring connected to the rod. Initially, we cut power \
+         to release the rod, but the spring's rotation fed a large current back into the circuitry. To prevent this, I added a relay \
+         to each motor coil to electrically isolate the motor from our circuitry and eliminating electrical braking."
       },
       {
         challenge: "Line Release Timing",
         solution:
-          "fast solenoid/testing release timing",
+          "Achieving consistent casting distances required precise timing of line release. I designed experiments to determine \
+           the exact release timings our solenoid needed for the various casting distances supported by our device.",
       },
       {
-        challenge: "Reeling speeds",
+        challenge: "Reeling Speeds",
         solution:
-          "feedback loop but maybe remove this challenge",
+          "I implemented a feedback loop using the reeling motor's encoder to adjust power and maintain consistent reeling speeds.",
       }
     ],
     gallery: [
@@ -341,15 +345,22 @@ export const projectsData = [
       "Rain detection",
     ],
     detailedDescription: [
-      "Sentnce 1.",
+      "For an intro engineering projects course I was on a team tasked with creating a device to help correct a negative pet \
+       behavior. Our solution was an automated doggy door lock that sensed when the ground was wet from rain and locked the \
+       doggy door from the outside to stop your dog from going out and tracking in mud.",
     ],
     challenges: [
       {
-        challenge: "Challenge 1",
+        challenge: "Communication from Sensor to Lock",
         solution:
-          "Solution 1.",
+          "When the moisture sensor detected the ground was wet it needed to communicate with the lock to shut. I helped \
+          develop the circuitry and code to use NRF Transcievers for wireless communication.",
+      },
+      {
+        challenge: "Actuating Lock",
+        solution:
+          "I modeled a rack and pinion mechanism inside our device to raise and lower the lock when we actuated our servo.",
       },
     ],
     gallery: [],
-    link: "https://github.com/yourusername/doggy-door",
   }];
