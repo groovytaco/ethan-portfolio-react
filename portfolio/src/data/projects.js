@@ -136,34 +136,57 @@ export const projectsData = [
     id: 4,
     title: "Magnet Table",
     category: "Robotics",
-    image: "/images/magnets/magnet-table.jpg",
+    image: "/images/magnets/demo.png",
     description:
-      "Interactive magnet-based system for remote collaborative board games.",
+      "Developed a remote-interactive magnetic game table that uses motorized magnets to move physical game pieces, enabling \
+      collaborative gameplay across distances.",
     tech: [
       "Prototyping",
       "Mechanical Design",
       "Embedded Systems",
+      "Control Systems",
+      "Networking",
+      "User Experience Design",
     ],
     features: [
-      "Magnetic piece manipulation",
-      "Remote synchronization",
-      "Multi-player support",
-      "Custom game piece detection",
+      "Magnetic piece manipulation via hidden actuators",
+      "Remote synchronization between interactive tables",
+      "Multi-player support for shared game interaction",
+      "Custom game piece detection and positioning",
     ],
     detailedDescription: [
-      "Developed a magnet-based system for creating board games that can be played remotely, allowing players in different locations to interact with the same physical game board.",
-      "The system uses motorized magnets beneath the table surface to move game pieces, with sensors detecting piece positions and transmitting data to remote players.",
-      "Designed and built a Scotch Yoke mechanism to raise and lower magnets for grabbing and moving game pieces precisely.",
+      "Designed and built a magnetically actuated tabletop system for playing board games collaboratively across remote locations,\
+       enabling users to interact with the same physical game setup from different places. The system uses motorized magnet actuators\
+       mounted beneath the table surface to precisely move magnetic game pieces on top of the board. Embedded sensors track piece\
+       positions, and data is synchronized over a network so that actions on one table are mirrored on the paired remote table.",
+    ],
+    contributions: [
+      "Led hardware design and integration of actuators.",
+      "Designed and fabricated scotch yoke mechanisms for reliable magnet engagement.",
+      "Coordinated user testing and iterated on interaction design.",
     ],
     challenges: [
       {
-        challenge: "Challenge 1",
+        challenge: "Designing interactive magnetic game pieces",
         solution:
-          "Solution 1",
+          "I designed and prototyped several interactive game elements, such as a magnetic resource tracker, ensuring they \
+           could be reliably manipulated by the table’s magnetic system while remaining intuitive for players.",
+      },
+      {
+        challenge: "Packaging and mounting components on a compact robot",
+        solution:
+          "I designed mounts to integrate the magnet mechanism and supporting components onto the small Toio robot platform, \
+           carefully managing space constraints, alignment, and mechanical stability.",
       },
     ],
-    gallery: [],
-    link: "https://github.com/yourusername/project-name",
+    
+    gallery: [
+      "/images/magnets/tabletopRobots.jpg",
+      "/images/magnets/pcb.png",
+      "/images/magnets/tabletopRobot.png",
+      "/images/magnets/scotchYoke.png",
+    ],
+    link: "https://github.com/etsa2103/magTablePCB",
   },
   // ================================================================
   // ================================================================
@@ -172,30 +195,50 @@ export const projectsData = [
     id: 5,
     title: "Drill Powered Bike",
     category: "Hardware",
-    image: "/images/bike/drill-bike.jpg",
+    image: "/images/bike/teamPhoto.jpg",
     description:
-      "Engineered an innovative hybrid mobility system by integrating a power drill drivetrain with a standard bicycle frame.",
+      "Designed and fabricated a drill-powered tricycle capable of pulling heavy loads uphill as part of a component design course.",
     tech: [
       "Mechanical Design",
+      "SolidWorks CAD",
+      "Stress Analysis",
       "Machining",
       "Drive Systems",
-      "Finite Element Analysis",
       "Prototyping",
-      "Team Collaboration",
     ],
     features: [
-      "Feature 1",
+      "Drill-driven drivetrain",
+      "Custom welded steel frame",
+      "Optimized gear ratio for hill climbing under load",
+    ],
+    contributions: [
+      "Created the CAD model using SolidWorks weldments and created detailed part drawings",
+      "Performed stress analysis to inform material selection and frame geometry",
+      "Machined and fabricated components using mill, saw, and drill press",
+      "Assembled the drivetrain and integrated press-fit bearing mounts",
     ],
     challenges: [
       {
-        challenge: "Challenge 1",
+        challenge: "Structural strength under heavy load",
         solution:
-          "Solution 1",
+          "I performed stress analysis to guide material selection and frame geometry, ensuring the structure could withstand \
+           high loads while remaining lightweight and within budget.",
+      },
+      {
+        challenge: "Reliable power transmission from a hand drill",
+        solution:
+          "I designed and fabricated a custom drivetrain to efficiently transfer torque from the drill to the wheels, \
+           optimizing the gear ratio for maximum pulling performance. Our bike ended up hauling 850 lbs uphill",
       },
     ],
-    gallery: [],
-    link: "https://github.com/yourusername/project-name",
-  },
+    gallery: [
+      "/images/bike/frameCAD.jpg",
+      "/images/bike/noPaintBike.jpg",
+      "/images/bike/paintedBike.jpg",
+      "/images/bike/teamPhoto3.jpg",
+      "/images/bike/thomasRacing.png",
+    ],
+  },  
   // ================================================================
   // ================================================================
   // ================================================================
@@ -294,12 +337,9 @@ export const projectsData = [
         challenge: "Extracting meaningful semantic embeddings from partial object views",
         solution:
           "Objects were often observed only partially from individual viewpoints. I integrated CLIP embeddings at the \
-          object level to provide consistent semantic representations despite incomplete visual information."
-      },
-      {
-        challenge: "Associating object observations across multiple viewpoints",
-        solution: "Geometric fusion criteria based on 3D centroids and spatial overlap were developed to merge observations \
-         into consistent object-level point cloud reconstructions."
+          object level to provide consistent semantic representations despite incomplete visual information. Geometric \
+          fusion criteria based on 3D centroids and spatial overlap were also developed to merge observations into consistent\
+          object-level point cloud reconstructions."
       },
       {
         challenge: "Representing complex 3D scenes in a compact structure",

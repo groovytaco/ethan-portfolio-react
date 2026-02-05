@@ -12,4 +12,6 @@ Fill out all content/ fill from PDF.
 
 add hobbies section back in
 
+update magtable github to have all the project files and a nice readme
+
 <!-- Integrate all photos. -->

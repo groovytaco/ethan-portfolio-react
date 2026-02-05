@@ -88,11 +88,10 @@ function ProjectPage() {
 
             <div className="bg-slate-900/50 p-6 rounded-xl border border-blue-900/30">
               <h3 className="text-2xl font-bold text-cyan-400 mb-4">Key Features</h3>
-              <ul className="space-y-2 text-gray-300">
-                {project.features && project.features.map((feature, index) => (
-                  <li key={index} className="flex items-start gap-2">
-                    <span className="text-cyan-400 mt-1">•</span>
-                    <span>{feature}</span>
+              <ul className="space-y-2 text-gray-300 list-disc pl-5">
+                {project.features?.map((feature, index) => (
+                  <li key={index} className="marker:text-cyan-400">
+                    {feature}
                   </li>
                 ))}
               </ul>
@@ -126,15 +125,14 @@ function ProjectPage() {
               </div>
             </div>
           )}
-          
+
           {project.contributions && (
           <div className="bg-slate-900/50 p-6 rounded-xl border border-blue-900/30 mb-8">
             <h3 className="text-2xl font-bold text-cyan-400 mb-4">My Contributions</h3>
-            <ul className="space-y-2 text-gray-300">
-              {project.contributions && project.contributions.map((contribution, index) => (
-                <li key={index} className="flex items-start gap-2">
-                  <span className="text-cyan-400 mt-1">•</span>
-                  <span>{contribution}</span>
+            <ul className="space-y-2 text-gray-300 list-disc pl-5">
+              {project.contributions?.map((contribution, index) => (
+                <li key={index} className="marker:text-cyan-400">
+                  {contribution}
                 </li>
               ))}
             </ul>
