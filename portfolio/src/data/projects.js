@@ -104,31 +104,31 @@ export const projectsData = [
   // ================================================================
   // ================================================================
   // ================================================================
-  {
-    id: 3,
-    title: "Robo Racer (In Progress)",
-    category: "Robotics",
-    image: "/images/RoboRacer/RoboRacerCar.png",
-    description:
-      "Fill in",
-    tech: ["ROS2", "Computer Vision", "Autonomy", "Machine Learning"],
-    features: [
+  // {
+  //   id: 3,
+  //   title: "Robo Racer (In Progress)",
+  //   category: "Robotics",
+  //   image: "/images/RoboRacer/RoboRacerCar.png",
+  //   description:
+  //     "Fill in",
+  //   tech: ["ROS2", "Computer Vision", "Autonomy", "Machine Learning"],
+  //   features: [
       
-    ],
-    detailedDescription: [
-      "First sentence.",
-      "Second sentence.",
-    ],
-    challenges: [
-      {
-        challenge: "Challenge 1",
-        solution:
-          "Solution 1",
-      },
-    ],
-    gallery: [],
-    link: "https://github.com/yourusername/project-name",
-  },
+  //   ],
+  //   detailedDescription: [
+  //     "First sentence.",
+  //     "Second sentence.",
+  //   ],
+  //   challenges: [
+  //     {
+  //       challenge: "Challenge 1",
+  //       solution:
+  //         "Solution 1",
+  //     },
+  //   ],
+  //   gallery: [],
+  //   link: "https://github.com/yourusername/project-name",
+  // },
   // ================================================================
   // ================================================================
   // ================================================================
@@ -208,17 +208,35 @@ export const projectsData = [
       "Custom-built steering wheel for racing simulators that is compatible with xbox controllers.",
     tech: ["Prototyping", "Asthetic focused design", "3D Printing", "woodworking"],
     features: [
-      "Feature 1",
+      "Compatible with xbox one controller",
+      "LED underglow",
+
     ],
     detailedDescription: [
-      "Designed and fabricated a custom gaming steering wheel with force feedback capabilities for an immersive racing simulation experience.",
-      "The project involved 3D printing custom parts, integrating sensors and motors, and programming the control system for realistic force feedback.",
+      "In this project, I designed and built a device that attaches to a standard Xbox One controller and converts it into\
+       a functional steering wheel for racing simulators. The steering wheel’s rotational input is translated into lateral\
+      motion of the controller’s analog stick using a multi-stage gear system, allowing it to work seamlessly with games\
+      that rely on traditional controller steering inputs. The gear mechanism and controller interface were housed inside\
+      a custom-built wooden enclosure, combining functional durability with a clean, finished appearance.",
+      
+      "A major focus of the project was achieving a street-racing aesthetic. The encloser was painted matte black, the wheel \
+      eas wrapped in leather, and the whole thing was accented with a metallic center hub and purple LED underglow. The center\
+      hub was machined from aluminum to provide strength and visual contrast, while the rest of the wheel was 3D printed."
     ],
     challenges: [
       {
-        challenge: "Challenge 1",
+        challenge: "Translating rotational steering input into analog stick motion",
         solution:
-          "Solution 1",
+          "Designing a reliable way to convert rotational steering input into lateral analog stick movement required several\
+          iterations of a multi-stage gear mechanism. I tested different gear ratios and layouts to achieve smooth motion,\
+          proper centering, and a steering range that felt natural and responsive in-game."
+      },
+      {
+        challenge: "Balancing aesthetics with structural strength",
+        solution:
+          "Achieving a strong street-racing aesthetic while maintaining durability required careful material choices. I used\
+          a machined aluminum center hub for strength and visual contrast, while 3D printing the wheel allowed rapid iteration\
+          of ergonomics and form. The wooden enclosure provided both rigidity and a finished appearance."
       },
     ],
     gallery: [
@@ -233,7 +251,7 @@ export const projectsData = [
       "/images/wheel/IMG_5795.jpg",
       "/images/wheel/IMG_5492_edited_edited.jpg",
     ],
-    link: "https://github.com/yourusername/gaming-wheel",
+    link: "https://www.aesdes.org/author/aau2024etsa2103/",
   },
   // ================================================================
   // ================================================================
@@ -266,69 +284,69 @@ export const projectsData = [
   // ================================================================
   // ================================================================
   // ================================================================
-  {
-    id: 7,
-    title: "Bohnanza Video Game (In Progress)",
-    category: "Software",
-    image: "/images/bohnanza/IMG_3897.jpg",
-    description: [
-      "A digital recreation of the classic card game Bohnanza, reimagined for the web."
-    ],
-    tech: ["Python", "React", "Node.js", "Socket.io"],
-    features: [
-      "Animated card dealing, planting, and harvesting sequences",
-      "Strategic trading system mirroring the tabletop version",
-      "Real-time multiplayer with lobby and matchmaking",
-      "Responsive design for both desktop and mobile players",
-    ],
-    detailedDescription: [
-      "Bohnanza: Digital Harvest is a modern web adaptation of the classic card game Bohnanza, transforming its fast-paced trading and bean-farming strategy into an interactive online experience.",
-      "Players can join matches, plant and harvest beans, and negotiate trades with others in real time through an intuitive and animated interface.",
-      "Built with React, Node.js, and Socket.io, the game delivers seamless multiplayer gameplay and responsive performance across devices.",
-      "A modular architecture separates game logic from the UI, allowing for smooth animations, clear visual feedback, and future scalability.",
-      "The design preserves the charm and strategic depth of the original tabletop game while offering a sleek, accessible digital environment for both casual and competitive players.",
-    ],
-    challenges: [
-      {
-        challenge: "Challenge 1",
-        solution:
-          "Solution 1",
-      },
-    ],
-    gallery: [],
-    link: "https://github.com/yourusername/magnet-table",
-  },
+  // {
+  //   id: 7,
+  //   title: "Bohnanza Video Game (In Progress)",
+  //   category: "Software",
+  //   image: "/images/bohnanza/IMG_3897.jpg",
+  //   description: [
+  //     "A digital recreation of the classic card game Bohnanza, reimagined for the web."
+  //   ],
+  //   tech: ["Python", "React", "Node.js", "Socket.io"],
+  //   features: [
+  //     "Animated card dealing, planting, and harvesting sequences",
+  //     "Strategic trading system mirroring the tabletop version",
+  //     "Real-time multiplayer with lobby and matchmaking",
+  //     "Responsive design for both desktop and mobile players",
+  //   ],
+  //   detailedDescription: [
+  //     "Bohnanza: Digital Harvest is a modern web adaptation of the classic card game Bohnanza, transforming its fast-paced trading and bean-farming strategy into an interactive online experience.",
+  //     "Players can join matches, plant and harvest beans, and negotiate trades with others in real time through an intuitive and animated interface.",
+  //     "Built with React, Node.js, and Socket.io, the game delivers seamless multiplayer gameplay and responsive performance across devices.",
+  //     "A modular architecture separates game logic from the UI, allowing for smooth animations, clear visual feedback, and future scalability.",
+  //     "The design preserves the charm and strategic depth of the original tabletop game while offering a sleek, accessible digital environment for both casual and competitive players.",
+  //   ],
+  //   challenges: [
+  //     {
+  //       challenge: "Challenge 1",
+  //       solution:
+  //         "Solution 1",
+  //     },
+  //   ],
+  //   gallery: [],
+  //   link: "https://github.com/yourusername/magnet-table",
+  // },
   // ================================================================
   // ================================================================
   // ================================================================
-  {
-    id: 8,
-    title: "Transformer Game (In Progress)",
-    category: "Software",
-    image: "/images/transformers/transformer-game.png",
-    description:
-      "Personal video game project based on the transformer series where two teams of 5 battle to destroy the opposing team's base.",
-    tech: ["UE4", "Blender", "Game Development"],
-    features: [
-      "Custom transformer animation and game mechanics",
-      "Feature 2",
-    ],
-    detailedDescription: [
-      "Sentnce 1.",
-    ],
-    challenges: [
-      {
-        challenge: "Challenge 1",
-        solution:
-          "Solution 1.",
-      },
-    ],
-    gallery: [
-      "/images/transformers/Screenshot 2024-09-11 at 3.55.20 PM.png",
-      "/images/transformer-game.png",
-    ],
-    link: "https://github.com/yourusername/transformer-game",
-  },
+  // {
+  //   id: 8,
+  //   title: "Transformer Game (In Progress)",
+  //   category: "Software",
+  //   image: "/images/transformers/transformer-game.png",
+  //   description:
+  //     "Personal video game project based on the transformer series where two teams of 5 battle to destroy the opposing team's base.",
+  //   tech: ["UE4", "Blender", "Game Development"],
+  //   features: [
+  //     "Custom transformer animation and game mechanics",
+  //     "Feature 2",
+  //   ],
+  //   detailedDescription: [
+  //     "Sentnce 1.",
+  //   ],
+  //   challenges: [
+  //     {
+  //       challenge: "Challenge 1",
+  //       solution:
+  //         "Solution 1.",
+  //     },
+  //   ],
+  //   gallery: [
+  //     "/images/transformers/Screenshot 2024-09-11 at 3.55.20 PM.png",
+  //     "/images/transformer-game.png",
+  //   ],
+  //   link: "https://github.com/yourusername/transformer-game",
+  // },
   // ================================================================
   // ================================================================
   // ================================================================
@@ -359,7 +377,7 @@ export const projectsData = [
       {
         challenge: "Actuating Lock",
         solution:
-          "I modeled a rack and pinion mechanism inside our device to raise and lower the lock when we actuated our servo.",
+          "I designed and printed a rack and pinion mechanism inside our device to raise and lower the lock when we actuated our servo.",
       },
     ],
     gallery: [],
