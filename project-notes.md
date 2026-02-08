@@ -14,4 +14,6 @@ add hobbies section back in
 
 update magtable github to have all the project files and a nice readme
 
+update rsume section and file download with newest resume
+
 <!-- Integrate all photos. -->

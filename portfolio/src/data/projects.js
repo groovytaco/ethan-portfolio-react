@@ -41,8 +41,8 @@ export const projectsData = [
       {
         challenge: "Handling Generated Current",
         solution: "Our casting system uses a stepper motor to wind a torsional spring connected to the rod. Initially, we cut power \
-         to release the rod, but the spring's rotation fed a large current back into the circuitry. To prevent this, I added a relay \
-         to each motor coil to electrically isolate the motor from our circuitry and eliminating electrical braking."
+         to release the rod, but the spring's rotation fed a large current back into the circuitry. To prevent this, I added a \
+         relay to each motor coil to electrically isolate the motor from our circuitry and eliminating electrical braking."
       },
       {
         challenge: "Line Release Timing",
@@ -74,32 +74,40 @@ export const projectsData = [
   // ================================================================
   {
     id: 2,
-    title: "Resperation Rate Tracker",
+    title: "Respiration Rate Tracker",
     category: "Robotics",
     image: "/images/RRTracker/RR_tracker_outside.png",
     description:
-      "Contact free thermal respiration rate tracker using computer vision and machine learning.",
-    tech: ["ROS", "Computer Vision", "Machine Learning", "Signal Processing"],
+      "A contact-free system for estimating human respiration rate using thermal imaging on mobile robotic platforms.",
+    tech: ["ROS", "Computer Vision", "Signal Processing", "Thermal Imaging"],
     features: [
-      
-      "Resperation Rate Estimation",
-      "Real-time facial tracking on thermal images",
-      "Signal stability tracking",
-      "Signal filtering",
+      "Contact-free respiration rate estimation",
+      "Real-time facial and nostril region tracking in thermal imagery",
+      "Robust signal extraction under subject motion",
+      "Peak-based breathing rate estimation"
     ],
     detailedDescription: [
-      "First sentence.",
-      "Second sentence.",
+      "This project implements a contact-free respiration rate tracker using LWIR thermal imagery. Breathing is measured indirectly \
+      by capturing subtle temperature changes around the nostrils caused by warm exhaled air.",
+
+      "Facial tracking is used to maintain a consistent nostril region of interest as the subject moves. The extracted thermal \
+      intensity signal is processed using temporal filtering and peak detection to isolate breathing-related oscillations while \
+      suppressing noise from head motion, ambient temperature variation, and sensor drift. The system runs in real time and has \
+      been deployed on a mobile robotic platform in outdoor and low-light environments."
     ],
+
     challenges: [
       {
-        challenge: "Challenge 1",
+        challenge: "Separating respiration signals from thermal drift and noise",
         solution:
-          "Solution 1",
-      },
+          "To address slow thermal drift and transient noise, I applied band-limited temporal filtering tuned to expected human \
+          breathing frequencies and used peak consistency checks to reject spurious extrema. Frames with unstable regions of \
+          interest caused by head motion or tracking loss were excluded from estimation, improving the stability of the \
+          respiration rate output."
+      }
     ],
     gallery: [],
-    link: "https://github.com/yourusername/project-name",
+    link: "https://arxiv.org/abs/2512.08754"
   },
   // ================================================================
   // ================================================================
