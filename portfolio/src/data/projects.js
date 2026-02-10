@@ -194,7 +194,7 @@ export const projectsData = [
       "/images/magnets/tabletopRobot.png",
       "/images/magnets/scotchYoke.png",
     ],
-    link: "https://github.com/etsa2103/magTablePCB",
+    link: "https://github.com/etsa2103/magTable",
   },
   // ================================================================
   // ================================================================

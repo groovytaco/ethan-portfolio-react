@@ -6,7 +6,7 @@ function ProjectsPreview() {
   const navigate = useNavigate();
 
   return (
-    <div id="Projects" className="pt-20 pb-16 px-4">
+    <div id="Projects" className="py-10 px-4">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">
           Featured Projects

@@ -22,7 +22,7 @@ function Contact() {
       id="Contact"
       className="min-h-screen bg-gradient-to-br from-zinc-950 via-stone-500 to-zinc-900 text-white"
     >
-      <div className="pt-24 pb-16 px-4">
+      <div className="py-10 px-4">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center">
             Get In Touch

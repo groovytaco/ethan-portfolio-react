@@ -14,7 +14,7 @@ function Profile() {
   return (
     <section
       id="Profile"
-      className="relative min-h-screen flex items-center justify-center px-4 pt-16"
+      className="relative min-h-screen flex items-center justify-center px-4 pt-16 pb-4"
     >
       <div
         className="absolute inset-0 z-0"
