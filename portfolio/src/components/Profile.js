@@ -32,7 +32,7 @@ function Profile() {
         <div className="mb-8">
           <div className="mb-10 flex justify-center">
             <img
-              src="/images/portrait_2.jpg"
+              src="/images/portrait_2.JPG"
               alt="Portrait"
               className="w-[34rem] h-[34rem] md:w-[34rem] md:h-[34rem] lg:w-[36rem] lg:h-[36rem] rounded-full object-cover border-8 border-cyan-400 shadow-2xl"
             />
