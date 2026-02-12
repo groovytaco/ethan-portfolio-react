@@ -1,9 +1,9 @@
 import React from "react";
 import { Github, Linkedin, Mail, ChevronRight } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 function Profile() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
